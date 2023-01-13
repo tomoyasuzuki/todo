@@ -13,7 +13,11 @@ function App() {
 }
 
 function TitleOnTop() {
-  return <h1>Tomoya Suzuki</h1>
+  return (
+    <div style={{display: "flex", justifyContent: "center"}}>
+      <h1>ToDo App by Tomoya Suzuki</h1>
+    </div>
+  );
 }
 
 function TodoListCard() {
