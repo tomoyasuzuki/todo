@@ -2,6 +2,7 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
+            <TitleOnTop></TitleOnTop>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
@@ -9,6 +10,10 @@ function App() {
             </Row>
         </Container>
     );
+}
+
+function TitleOnTop() {
+  return <h1>Tomoya Suzuki</h1>
 }
 
 function TodoListCard() {
